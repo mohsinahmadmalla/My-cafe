@@ -1,85 +1,129 @@
-body{
-margin:0;
-font-family:'Poppins', sans-serif;
-background:#f6f7fb;
-color:#222;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
 
-header{
-background:linear-gradient(135deg,#ff4b2b,#ff416c);
-color:white;
-text-align:center;
-padding:50px 20px;
-border-bottom-left-radius:30px;
-border-bottom-right-radius:30px;
-}
+  <style>
+    body{
+      margin:0;
+      font-family:'Poppins', sans-serif;
+      background:#f6f7fb;
+      color:#222;
+    }
 
-header h1{
-font-size:40px;
-margin:0;
-}
+    header{
+      background:linear-gradient(135deg,#ff4b2b,#ff416c);
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+      border-bottom-left-radius:30px;
+      border-bottom-right-radius:30px;
+    }
 
-nav{
-display:flex;
-justify-content:center;
-background:white;
-padding:10px;
-position:sticky;
-top:0;
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
-}
+    header h1{
+      font-size:40px;
+      margin:0;
+    }
 
-nav a{
-margin:0 15px;
-text-decoration:none;
-color:#333;
-font-weight:bold;
-}
+    nav{
+      display:flex;
+      justify-content:center;
+      background:white;
+      padding:10px;
+      position:sticky;
+      top:0;
+      box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    }
 
-section{
-padding:40px 20px;
-}
+    nav a{
+      margin:0 15px;
+      text-decoration:none;
+      color:#333;
+      font-weight:bold;
+    }
 
-.title{
-text-align:center;
-font-size:28px;
-margin-bottom:20px;
-}
+    section{
+      padding:40px 20px;
+    }
 
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
-}
+    .title{
+      text-align:center;
+      font-size:28px;
+      margin-bottom:20px;
+    }
 
-.card{
-background:white;
-border-radius:15px;
-padding:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.3s;
-text-align:center;
-}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
 
-.card:hover{
-transform:translateY(-5px);
-}
+    .card{
+      background:white;
+      border-radius:15px;
+      padding:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition:0.3s;
+      text-align:center;
+    }
 
-button{
-background:linear-gradient(45deg,#ff416c,#ff4b2b);
-border:none;
-color:white;
-padding:10px 15px;
-border-radius:25px;
-cursor:pointer;
-margin-top:10px;
-}
+    .card:hover{
+      transform:translateY(-5px);
+    }
 
-button:hover{
-opacity:0.9;
-}
+    button{
+      background:linear-gradient(45deg,#ff416c,#ff4b2b);
+      border:none;
+      color:white;
+      padding:10px 15px;
+      border-radius:25px;
+      cursor:pointer;
+      margin-top:10px;
+    }
 
-img{src="https://source.unsplash.com/400x300/?burger"
-width:100%;
-border-radius:10px;
-}
+    button:hover{
+      opacity:0.9;
+    }
+
+    img{
+      width:100%;
+      border-radius:10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>My Website</h1>
+    <p>Welcome to my GitHub Pages site</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <section>
+    <div class="title">My Cards</div>
+
+    <div class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/300" />
+        <h3>Card 1</h3>
+        <button>Click Me</button>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/300" />
+        <h3>Card 2</h3>
+        <button>Click Me</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
